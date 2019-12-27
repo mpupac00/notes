@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note 1"
+        android:id="@+id/openNoteTitle"
+        android:textSize="40dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/noteTitleTv"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/openNoteTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+    <TextView
+        android:id="@+id/noteContentTv"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteTitleTv"
+        android:layout_alignStart="@+id/noteTitleTv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="20dp"
+        android:lines="5"
+        android:maxLines="5"
+        android:text="Content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/updateNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteContentTv"
+        android:layout_alignLeft="@+id/noteContentTv"
+        android:layout_marginTop="161dp"
+        android:text="Update note" />
+
+    <Button
+        android:id="@+id/deleteNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteContentTv"
+        android:layout_alignEnd="@+id/noteContentTv"
+        android:layout_marginTop="161dp"
+        android:text="Delete note" />
+
+    <TextView
+        android:id="@+id/noteLinkTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="124dp"
+        android:layout_height="127dp"
+        android:layout_alignEnd="@+id/noteContentTv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="59dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+</RelativeLayout>
